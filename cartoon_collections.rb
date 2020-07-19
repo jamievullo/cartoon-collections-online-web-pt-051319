@@ -23,7 +23,9 @@ end
 
 def find_the_cheese(snacks)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  if(snacks.include?(cheese_types))
-    puts 
+  cheese_types.each do |cheese|
+    if(snacks.include?(cheese))
+      puts cheese
+    end 
   end
 end
